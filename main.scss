@@ -1,4 +1,9 @@
 $mcolor: palevioletred;
+$back-color: rgba(57, 78, 110, 0.87);
+%h1-option{ 
+    font-size: 64px;
+    font-weight: 900;
+}
 
 .body{
     font-family: 'Raleway', sans-serif;
@@ -15,7 +20,7 @@ $mcolor: palevioletred;
     .nav{
         height: 48px;
         color: white;
-        background-color: rgba(57, 78, 110, 0.87);
+        background-color: $back-color;
         display: flex;
         position: absolute;
         top: 0px;
@@ -23,12 +28,14 @@ $mcolor: palevioletred;
         right: 0px;
         justify-content: space-between;
         padding: 0 1.1em;
-        h1{
+        h2{
+            margin: 10px 0 0 0;
             font-size: 1.5em;
+            padding: 0 0 0 22px;
         }
         ul{
             display: flex;
-            width: 35em;
+            width: 30em;
             flex-flow: row nowrap;
             list-style-type: none;
             justify-content: space-between;
@@ -44,8 +51,61 @@ $mcolor: palevioletred;
         justify-content: center;
         align-items: center;
         h1{
-            font-size: 64px;
+            @extend %h1-option;
             font-weight: 900;
+        }
+    }
+}
+.main{
+    display: inline-block;
+    font-family: 'Raleway', sans-serif;
+    background-color: lightgray;
+
+    .main__doing{
+        color: black;
+        font-size: 20px;
+        font-weight: 500;
+        height: 18em;
+        padding: 0 10em;
+        background-color: white;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+
+        h1{
+            font-size: 44px;
+            font-weight: 800;
+            justify-self: flex-start;
+            align-self: flex-start;
+        }
+    }
+    .achivments{
+        background-color: $back-color;
+        height: 18em;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+
+        h1{
+            @extend %h1-option;
+            padding: 0 0.7em;
+            text-align: center;
+
+            p{
+                font-size: 22px;
+                font-weight: 500;
+            }
+        }
+    }
+    .approach{
+        background-color: white;
+        height: 70em;
+        width: 85%;
+        margin: 0 5em;
+        h1{
+            @extend %h1-option;
         }
     }
 }

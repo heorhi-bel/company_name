@@ -1,3 +1,7 @@
+.header .landing h1, .main .achivments h1, .main .approach h1 {
+  font-size: 64px;
+  font-weight: 900; }
+
 .body {
   font-family: 'Raleway', sans-serif;
   font-size: 16px;
@@ -25,13 +29,15 @@
         -ms-flex-pack: justify;
             justify-content: space-between;
     padding: 0 1.1em; }
-    .header .nav h1 {
-      font-size: 1.5em; }
+    .header .nav h2 {
+      margin: 10px 0 0 0;
+      font-size: 1.5em;
+      padding: 0 0 0 22px; }
     .header .nav ul {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
-      width: 35em;
+      width: 30em;
       -webkit-box-orient: horizontal;
       -webkit-box-direction: normal;
           -ms-flex-flow: row nowrap;
@@ -59,5 +65,62 @@
         -ms-flex-align: center;
             align-items: center; }
     .header .landing h1 {
-      font-size: 64px;
       font-weight: 900; }
+
+.main {
+  display: inline-block;
+  font-family: 'Raleway', sans-serif;
+  background-color: lightgray; }
+  .main .main__doing {
+    color: black;
+    font-size: 20px;
+    font-weight: 500;
+    height: 18em;
+    padding: 0 10em;
+    background-color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .main .main__doing h1 {
+      font-size: 44px;
+      font-weight: 800;
+      justify-self: flex-start;
+      -ms-flex-item-align: start;
+          align-self: flex-start; }
+  .main .achivments {
+    background-color: rgba(57, 78, 110, 0.87);
+    height: 18em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .main .achivments h1 {
+      padding: 0 0.7em;
+      text-align: center; }
+      .main .achivments h1 p {
+        font-size: 22px;
+        font-weight: 500; }
+  .main .approach {
+    background-color: white;
+    height: 70em;
+    width: 85%;
+    margin: 0 5em; }
