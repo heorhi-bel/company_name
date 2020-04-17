@@ -1,0 +1,51 @@
+$mcolor: palevioletred;
+
+.body{
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    width: 100%;
+}
+
+.header{
+    display: flex;
+    position: relative;
+    font-family: 'Raleway', sans-serif;
+
+    .nav{
+        height: 48px;
+        color: white;
+        background-color: rgba(57, 78, 110, 0.87);
+        display: flex;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        justify-content: space-between;
+        padding: 0 1.1em;
+        h1{
+            font-size: 1.5em;
+        }
+        ul{
+            display: flex;
+            width: 35em;
+            flex-flow: row nowrap;
+            list-style-type: none;
+            justify-content: space-between;
+        }
+    }
+    .landing{
+        font-size: 22px;
+        margin: 2em 0 0 0;
+        padding: 0 5em;
+        display: flex;
+        height: 30em;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+        h1{
+            font-size: 64px;
+            font-weight: 900;
+        }
+    }
+}

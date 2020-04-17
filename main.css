@@ -1,0 +1,63 @@
+.body {
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  width: 100%; }
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  font-family: 'Raleway', sans-serif; }
+  .header .nav {
+    height: 48px;
+    color: white;
+    background-color: rgba(57, 78, 110, 0.87);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 0 1.1em; }
+    .header .nav h1 {
+      font-size: 1.5em; }
+    .header .nav ul {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      width: 35em;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-flow: row nowrap;
+              flex-flow: row nowrap;
+      list-style-type: none;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between; }
+  .header .landing {
+    font-size: 22px;
+    margin: 2em 0 0 0;
+    padding: 0 5em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 30em;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .header .landing h1 {
+      font-size: 64px;
+      font-weight: 900; }
