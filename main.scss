@@ -175,21 +175,78 @@ $back-color: rgba(57, 78, 110, 0.87);
     }
 
     .technologies{
-        height: 60em;
-        margin: 0 10% 5em 10%;
-        display: grid;
-        grid-template-columns: repeat(auto-fill, 30%);
-        grid-gap: 0 2.1em;
-        justify-items: center;
-        align-items: center;
-        
-        div{
 
-            h2{
-                @extend %h2-option;
-                border-bottom: $mcolor solid;
-                border-width: thick;
-                
+        h1{
+            @extend %h1-option;
+            margin: 1em 10% 1.3em 10%;
+        }
+        .main__technologies--grid{
+            height: 50em;
+            margin: 0 10% 5em 10%;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, 30%);
+            grid-gap: 0 2.1em;
+            justify-items: stretch;;
+            align-items: stretch;
+
+            div{
+
+                h2{
+                    @extend %h2-option;
+                    border-bottom: $mcolor solid;
+                    border-width: thick;
+                    
+                }
+            }
+        }
+    }
+    .photos{
+        background-color: rgba(197, 195, 195, 0.507);
+
+        h1{
+            @extend %h1-option;
+            padding: 1em 15% 0.3em 15%;
+        }
+        .main__photos--grid{
+            height: 50em;
+            padding: 0 15% 5em 15%;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, 30%);
+            grid-gap: 1em 1.5em;
+
+            .img-1{ background: url(/images/photos\ 1\ 300x400.png);}
+            .img-2{ background: url(/images/photos\ office\ 2\ 300x400.jpg);}
+            .img-3{ background: url(/images/photos\ offiece\ 4-300x400.jpg);}
+            .img-4{ background: url(/images/photos\ office-300x400.jpg);}
+            .img-5{ background: url(/images/photos\ office\ 5\ 300x400.jpg);}
+            .img-6{ background: url(/images/photos\ office\ 3-300x400.jpg);}
+
+            .img{
+                width: 85%;
+                height: 100%; 
+                cursor: pointer;
+                background-position: center;
+                background-repeat: no-repeat;
+
+                border-radius: 5px;
+                box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
+                    
+            }
+            img::after{
+                content: '';
+                background-color: rgba(0, 0, 0, 0.87);
+                width: 300px;
+                height: 400px;
+                position: absolute;
+                display: block;
+                top: 0;
+                left: 0;
+            }
+            img:hover{
+                background-position: center center;
+                background-color: $mcolor;
+                width: 300px;
+                height: 400px;
             }
         }
     }
