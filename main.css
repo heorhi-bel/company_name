@@ -1,6 +1,10 @@
-.header .landing h1, .main .achivments h1, .main .approach h1 {
+.header .landing h1, .main .achivments h1, .main .approach .h1-approach, .main .idea h1 {
   font-size: 64px;
   font-weight: 900; }
+
+.main .approach h2, .main .technologies div h2 {
+  font-size: 30px;
+  font-weight: 700; }
 
 .body {
   font-family: 'Raleway', sans-serif;
@@ -70,14 +74,13 @@
 .main {
   display: inline-block;
   font-family: 'Raleway', sans-serif;
-  background-color: lightgray; }
+  background-color: white; }
   .main .main__doing {
     color: black;
     font-size: 20px;
     font-weight: 500;
     height: 18em;
     padding: 0 10em;
-    background-color: white;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -119,8 +122,84 @@
       .main .achivments h1 p {
         font-size: 22px;
         font-weight: 500; }
-  .main .approach {
-    background-color: white;
-    height: 70em;
-    width: 85%;
-    margin: 0 5em; }
+  .main .approach .h1-approach {
+    padding: 0.05em 2.5em; }
+  .main .approach .approach__grid {
+    height: 110em;
+    margin: 0 17% 1em 17%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 50%);
+    justify-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .main .approach h2 p {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.8; }
+  .main .idea {
+    color: white;
+    background-color: rgba(57, 78, 110, 0.87);
+    height: 30em;
+    width: 100%;
+    margin: 1em 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .main .idea p {
+      font-size: 24px;
+      font-weight: 400;
+      padding: 0 10em 1em 10em;
+      text-align: center; }
+    .main .idea .main__idea--button {
+      background-color: #e74c7a;
+      color: white;
+      text-decoration: none;
+      width: 25em;
+      height: 4.5em;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-flow: row nowrap;
+              flex-flow: row nowrap;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: start;
+          -ms-flex-align: start;
+              align-items: flex-start; }
+      .main .idea .main__idea--button p {
+        width: 12em;
+        height: 2em;
+        padding: 0; }
+    .main .idea .main__idea--button:hover {
+      background-color: #e74c7a;
+      opacity: .77; }
+    .main .idea .main__idea--button:active {
+      -webkit-transform: translate(1px, 5px);
+              transform: translate(1px, 5px); }
+  .main .technologies {
+    height: 60em;
+    margin: 0 10% 5em 10%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 30%);
+    grid-gap: 0 2.1em;
+    justify-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .main .technologies div h2 {
+      border-bottom: #e74c7a solid;
+      border-width: thick; }

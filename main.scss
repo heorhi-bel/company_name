@@ -1,8 +1,12 @@
-$mcolor: palevioletred;
+$mcolor: rgb(231, 76, 122);
 $back-color: rgba(57, 78, 110, 0.87);
 %h1-option{ 
     font-size: 64px;
     font-weight: 900;
+}
+%h2-option{ 
+    font-size: 30px;
+    font-weight: 700;
 }
 
 .body{
@@ -59,7 +63,7 @@ $back-color: rgba(57, 78, 110, 0.87);
 .main{
     display: inline-block;
     font-family: 'Raleway', sans-serif;
-    background-color: lightgray;
+    background-color: white;
 
     .main__doing{
         color: black;
@@ -67,7 +71,6 @@ $back-color: rgba(57, 78, 110, 0.87);
         font-weight: 500;
         height: 18em;
         padding: 0 10em;
-        background-color: white;
         display: flex;
         flex-flow: column nowrap;
         justify-content: center;
@@ -100,12 +103,94 @@ $back-color: rgba(57, 78, 110, 0.87);
         }
     }
     .approach{
-        background-color: white;
-        height: 70em;
-        width: 85%;
-        margin: 0 5em;
+        
+
+        .h1-approach{
+            @extend %h1-option;
+            padding: 0.05em 2.5em;
+        }
+
+        .approach__grid{
+            height: 110em;
+            margin: 0 17% 1em 17%;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, 50%);
+            justify-items: center;
+            align-items: center;
+        }
+        h2{
+            @extend %h2-option;
+            p{
+                font-size: 18px;
+                font-weight: 500;
+                line-height: 1.8;
+            }
+        }
+    }
+
+    .idea{
+        color: white;
+        background-color: $back-color;
+        height: 30em;
+        width: 100%;
+        margin: 1em 0;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+
         h1{
             @extend %h1-option;
+        }
+        p{
+            font-size: 24px;
+            font-weight: 400;
+            padding: 0 10em 1em 10em;
+            text-align: center;
+        }
+        .main__idea--button{
+            background-color: $mcolor;
+            color: white;
+            text-decoration: none;
+            width: 25em;
+            height: 4.5em;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: center;
+            align-items: flex-start;
+
+            p{
+                width: 12em;
+                height: 2em;
+                padding: 0;
+            }
+        }
+        .main__idea--button:hover{
+            background-color: $mcolor;
+            opacity: .77;
+        }
+        .main__idea--button:active{
+            transform: translate(1px, 5px);
+        }   
+    }
+
+    .technologies{
+        height: 60em;
+        margin: 0 10% 5em 10%;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, 30%);
+        grid-gap: 0 2.1em;
+        justify-items: center;
+        align-items: center;
+        
+        div{
+
+            h2{
+                @extend %h2-option;
+                border-bottom: $mcolor solid;
+                border-width: thick;
+                
+            }
         }
     }
 }
