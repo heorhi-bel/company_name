@@ -204,33 +204,68 @@
         <section class="photos">
             <h1> Projects </h1>
             <div class="main__photos--grid">
-                <!-- <img src="/images/photos 1 300x400.png" alt="Image crashed">
-                <img src="/images/photos office-300x400.jpg" alt="Image crashed">
-                <img src="/images/photos office 2 300x400.jpg" alt="Image crashed">
-                <img src="/images/photos office 3-300x400.jpg" alt="Image crashed">
-                <img src="/images/photos office 5 300x400.jpg" alt="Image crashed">
-                <img src="/images/photos offiece 4-300x400.jpg" alt="Image crashed"> -->
-                <div class="img img-1"></div>
-                <div class="img img-2"></div>
-                <div class="img img-3"></div>
-                <div class="img img-4"></div>
-                <div class="img img-5"></div>
-                <div class="img img-6"></div>
+                <div class="main__photos__container">
+                    <img src="/images/photos 1 300x400.png" alt="Image crashed">
+                </div>
+                <div class="main__photos__container">
+                    <img src="/images/photos office-300x400.jpg" alt="Image crashed">
+                </div>
+                <div class="main__photos__container">
+                    <img src="/images/photos office 2 300x400.jpg" alt="Image crashed">
+                </div>
+                <div class="main__photos__container">
+                    <img src="/images/photos office 3-300x400.jpg" alt="Image crashed">
+                </div>
+                <div class="main__photos__container">
+                    <img src="/images/photos office 5 300x400.jpg" alt="Image crashed">
+                </div>
+                <div class="main__photos__container">
+                    <img src="/images/photos offiece 4-300x400.jpg" alt="Image crashed">
+                </div> 
 
             </div>
         </section>
     </main>
-    <footer>
-        <fieldset>
-            <a name="contacts"></a>
-            <form>
-                <label for="contacts"></label>
-                <input type="text">
-                <input type="text">
-                <input type="text">
-                <textarea name="" id="" cols="30" rows="10"></textarea>
-            </form>
-        </fieldset>
+    <footer class="footer">
+        <h1> Contacts </h1>
+        <a name="contacts"></a>
+        <form class="footer__form">
+            <div>
+                <label for="name"></label>
+                <input id="name" type="text" placeholder="Name">
+            </div>
+            <div>
+                <label for="email"></label>
+                <input id="email" type="email" placeholder="Email">
+            </div>
+            <div>
+                <label for="phone"></label>
+                <input id="phone" type="tel" placeholder="Phone Number">
+            </div>
+            <textarea 
+                name="" 
+                id="text_area" 
+                cols="20" 
+                rows="10"
+                placeholder="Your Message..."
+                ></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+        <h2>Our Contacts</h2>
+        <div class="contacts__info">
+            <h3>office 1</h3>
+            <p>Country</p>
+            <p>City</p>
+            <p>Street</p>
+            <p>+9 (999)999 99 99</p>
+        </div>
+        <div class="contacts__info">
+            <h3>office 2</h3>
+            <p>Country</p>
+            <p>City</p>
+            <p>Street</p>
+            <p>+9 (999)999 99 99</p>
+        </div>
     </footer>
 </body>
 </html>
