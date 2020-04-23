@@ -2,7 +2,7 @@
   font-size: 64px;
   font-weight: 900; }
 
-.main .approach h2, .main .technologies .main__technologies--grid div h2, .footer h2 {
+.header .nav h2, .main .approach h2, .main .technologies .main__technologies--grid div h2, .footer h2 {
   font-size: 30px;
   font-weight: 700; }
 
@@ -33,10 +33,16 @@
         -ms-flex-pack: justify;
             justify-content: space-between;
     padding: 0 1.1em; }
+    @media screen and (max-width: 980px) and (min-width: 768px) {
+      .header .nav {
+        width: 980px;
+        height: 36px; } }
     .header .nav h2 {
       margin: 10px 0 0 0;
-      font-size: 1.5em;
       padding: 0 0 0 22px; }
+      @media screen and (max-width: 980px) and (min-width: 768px) {
+        .header .nav h2 {
+          font-size: 22px; } }
     .header .nav ul {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -50,14 +56,45 @@
       -webkit-box-pack: justify;
           -ms-flex-pack: justify;
               justify-content: space-between; }
+      @media screen and (max-width: 980px) and (min-width: 768px) {
+        .header .nav ul {
+          display: none; } }
+      .header .nav ul a {
+        color: white;
+        text-decoration: none; }
+      .header .nav ul a:hover {
+        text-decoration: underline; }
+      .header .nav ul a:focus {
+        opacity: .7;
+        outline: none; }
+    .header .nav li:active {
+      -webkit-transform: translateY(0.8px);
+              transform: translateY(0.8px); }
+    .header .nav .ul-min {
+      display: block;
+      width: 2em;
+      height: 2em;
+      position: absolute;
+      top: 0;
+      right: 10px; }
+      @media screen and (max-width: 980px) and (min-width: 768px) {
+        .header .nav .ul-min {
+          display: block;
+          width: 2em;
+          height: 2em;
+          position: absolute;
+          top: 0;
+          right: 70px; } }
   .header .landing {
     font-size: 22px;
+    color: white;
     margin: 2em 0 0 0;
-    padding: 0 5em;
+    padding: 0 15em;
+    text-align: center;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    height: 30em;
+    height: 38em;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-flow: column nowrap;
@@ -67,7 +104,10 @@
             justify-content: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
-            align-items: center; }
+            align-items: center;
+    background: url(/images/landing\ header\ 1.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat; }
     .header .landing h1 {
       font-weight: 900; }
 

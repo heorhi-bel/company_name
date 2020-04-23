@@ -1,13 +1,4 @@
-$mcolor: rgb(231, 76, 122);
-$back-color: rgba(57, 78, 110, 0.87);
-%h1-option{ 
-    font-size: 64px;
-    font-weight: 900;
-}
-%h2-option{ 
-    font-size: 30px;
-    font-weight: 700;
-}
+@import "_mixin.scss";
 
 .body{
     font-family: 'Raleway', sans-serif;
@@ -32,10 +23,18 @@ $back-color: rgba(57, 78, 110, 0.87);
         right: 0px;
         justify-content: space-between;
         padding: 0 1.1em;
+
+        @media screen and (max-width:980px) and (min-width:768px){
+            width: 980px;
+            height: 36px;
+        }
         h2{
             margin: 10px 0 0 0;
-            font-size: 1.5em;
+            @extend %h2-option;
             padding: 0 0 0 22px;
+            @media screen and (max-width:980px) and (min-width:768px){
+                font-size: 22px;
+            }
         }
         ul{
             display: flex;
@@ -43,17 +42,58 @@ $back-color: rgba(57, 78, 110, 0.87);
             flex-flow: row nowrap;
             list-style-type: none;
             justify-content: space-between;
+            @media screen and (max-width:980px) and (min-width:768px){
+                display: none;
+            }
+
+            a{
+                color: white;
+                text-decoration: none;
+            }
+            a:hover{
+                text-decoration: underline;
+            }
+            a:focus{
+                opacity: .7;
+                outline: none;
+            }
+        }
+        li:active{
+            transform: translateY(0.8px);
+        }
+        .ul-min{
+            display: block;
+            width: 2em;
+            height: 2em;
+            position: absolute;
+            top: 0;
+            right: 10px;
+
+            @media screen and (max-width:980px) and (min-width:768px){
+                display: block;
+                width: 2em;
+                height: 2em;
+                position: absolute;
+                top: 0;
+                right: 70px;
+            }
         }
     }
     .landing{
         font-size: 22px;
+        color: white;
         margin: 2em 0 0 0;
-        padding: 0 5em;
+        padding: 0 15em;
+        text-align: center;
         display: flex;
-        height: 30em;
+        height: 38em;
         flex-flow: column nowrap;
         justify-content: center;
         align-items: center;
+        background: url(/images/landing\ header\ 1.jpeg);
+        background-size: cover;
+        background-repeat: no-repeat;
+
         h1{
             @extend %h1-option;
             font-weight: 900;
