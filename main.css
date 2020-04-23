@@ -35,14 +35,25 @@
     padding: 0 1.1em; }
     @media screen and (max-width: 980px) and (min-width: 768px) {
       .header .nav {
-        width: 980px;
         height: 36px; } }
+    @media screen and (max-width: 768px) and (min-width: 500px) {
+      .header .nav {
+        height: 34px; } }
+    @media screen and (max-width: 500px) {
+      .header .nav {
+        height: 30px; } }
     .header .nav h2 {
       margin: 10px 0 0 0;
       padding: 0 0 0 22px; }
       @media screen and (max-width: 980px) and (min-width: 768px) {
         .header .nav h2 {
           font-size: 22px; } }
+      @media screen and (max-width: 768px) and (min-width: 500px) {
+        .header .nav h2 {
+          font-size: 20px; } }
+      @media screen and (max-width: 500px) {
+        .header .nav h2 {
+          font-size: inherit; } }
     .header .nav ul {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -59,6 +70,12 @@
       @media screen and (max-width: 980px) and (min-width: 768px) {
         .header .nav ul {
           display: none; } }
+      @media screen and (max-width: 768px) and (min-width: 500px) {
+        .header .nav ul {
+          display: none; } }
+      @media screen and (max-width: 500px) {
+        .header .nav ul {
+          display: none; } }
       .header .nav ul a {
         color: white;
         text-decoration: none; }
@@ -71,25 +88,24 @@
       -webkit-transform: translateY(0.8px);
               transform: translateY(0.8px); }
     .header .nav .ul-min {
-      display: block;
-      width: 2em;
-      height: 2em;
-      position: absolute;
-      top: 0;
-      right: 10px; }
+      display: none; }
       @media screen and (max-width: 980px) and (min-width: 768px) {
         .header .nav .ul-min {
           display: block;
-          width: 2em;
-          height: 2em;
-          position: absolute;
-          top: 0;
-          right: 70px; } }
+          margin: 5px 2px; } }
+      @media screen and (max-width: 768px) and (min-width: 500px) {
+        .header .nav .ul-min {
+          display: block;
+          margin: 5px 2px; } }
+      @media screen and (max-width: 500px) {
+        .header .nav .ul-min {
+          display: block;
+          margin: 5px 2px; } }
   .header .landing {
     font-size: 22px;
     color: white;
-    margin: 2em 0 0 0;
-    padding: 0 15em;
+    margin: 2.2em 0 0 0;
+    padding: 0 20%;
     text-align: center;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -110,6 +126,28 @@
     background-repeat: no-repeat; }
     .header .landing h1 {
       font-weight: 900; }
+      @media screen and (max-width: 768px) and (min-width: 500px) {
+        .header .landing h1 {
+          font-size: 56px; } }
+      @media screen and (max-width: 500px) {
+        .header .landing h1 {
+          font-size: 32px; } }
+    @media screen and (max-width: 980px) and (min-width: 768px) {
+      .header .landing {
+        padding: 0 15%;
+        margin: 1.6em 0 0 0; } }
+    @media screen and (max-width: 768px) and (min-width: 500px) {
+      .header .landing {
+        padding: 0 15%;
+        margin: 1.9em 0 0 0;
+        height: 32em;
+        font-size: 18px; } }
+    @media screen and (max-width: 500px) {
+      .header .landing {
+        padding: 0 15%;
+        margin: 2.4em 0 0 0;
+        height: 32em;
+        font-size: 12px; } }
 
 .main {
   display: inline-block;
@@ -120,7 +158,7 @@
     font-size: 20px;
     font-weight: 500;
     height: 18em;
-    padding: 0 10em;
+    padding: 0 20%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -140,8 +178,33 @@
       justify-self: flex-start;
       -ms-flex-item-align: start;
           align-self: flex-start; }
+      @media screen and (max-width: 980px) and (min-width: 768px) {
+        .main .main__doing h1 {
+          font-size: 40px; } }
+      @media screen and (max-width: 768px) and (min-width: 500px) {
+        .main .main__doing h1 {
+          font-size: 36px; } }
+      @media screen and (max-width: 500px) {
+        .main .main__doing h1 {
+          font-size: 26px; } }
+    @media screen and (max-width: 980px) and (min-width: 768px) {
+      .main .main__doing {
+        padding: 1% 15%;
+        font-size: 19px;
+        height: 25em; } }
+    @media screen and (max-width: 768px) and (min-width: 500px) {
+      .main .main__doing {
+        padding: 1% 5%;
+        font-size: 16px;
+        height: 30em; } }
+    @media screen and (max-width: 500px) {
+      .main .main__doing {
+        padding: 1% 5%;
+        font-size: 12px;
+        height: 20em; } }
   .main .achivments {
     background-color: rgba(57, 78, 110, 0.87);
+    color: white;
     height: 18em;
     display: -webkit-box;
     display: -ms-flexbox;
