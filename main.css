@@ -146,13 +146,14 @@
       .header .landing {
         padding: 0 15%;
         margin: 2.4em 0 0 0;
-        height: 32em;
+        height: 38em;
         font-size: 12px; } }
 
 .main {
   display: inline-block;
   font-family: 'Raleway', sans-serif;
-  background-color: white; }
+  background-color: white;
+  height: auto; }
   .main .main__doing {
     color: black;
     font-size: 20px;
@@ -164,8 +165,8 @@
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-flow: column nowrap;
-            flex-flow: column nowrap;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -189,19 +190,22 @@
           font-size: 26px; } }
     @media screen and (max-width: 980px) and (min-width: 768px) {
       .main .main__doing {
-        padding: 1% 15%;
+        padding: 0 10% 5% 20%;
         font-size: 19px;
-        height: 25em; } }
+        height: 20em; } }
     @media screen and (max-width: 768px) and (min-width: 500px) {
       .main .main__doing {
-        padding: 1% 5%;
+        padding: 5% 3% 8% 10%;
+        width: 70vw;
         font-size: 16px;
-        height: 30em; } }
+        height: 1fr; } }
     @media screen and (max-width: 500px) {
       .main .main__doing {
-        padding: 1% 5%;
+        margin: 1em 0;
+        padding: 3% 3% 5% 10%;
+        width: 75vw;
         font-size: 12px;
-        height: 20em; } }
+        height: auto; } }
   .main .achivments {
     background-color: rgba(57, 78, 110, 0.87);
     color: white;
@@ -211,8 +215,8 @@
     display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-flow: row nowrap;
-            flex-flow: row nowrap;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -225,6 +229,50 @@
       .main .achivments h1 p {
         font-size: 22px;
         font-weight: 500; }
+        @media screen and (max-width: 768px) and (min-width: 500px) {
+          .main .achivments h1 p {
+            font-size: 19px; } }
+        @media screen and (max-width: 500px) {
+          .main .achivments h1 p {
+            font-size: 16x; } }
+      @media screen and (max-width: 980px) and (min-width: 768px) {
+        .main .achivments h1 {
+          -webkit-transform: scale(0.7);
+                  transform: scale(0.7);
+          padding: 0 0.3em; } }
+      @media screen and (max-width: 768px) and (min-width: 500px) {
+        .main .achivments h1 {
+          font-size: 44px;
+          padding: 0 1.5em; } }
+      @media screen and (max-width: 500px) {
+        .main .achivments h1 {
+          font-size: 40px;
+          padding: 0.3em 2%;
+          width: 5em;
+          height: 3em; } }
+    @media screen and (max-width: 768px) and (min-width: 500px) {
+      .main .achivments {
+        height: auto;
+        -webkit-box-pack: space-evenly;
+            -ms-flex-pack: space-evenly;
+                justify-content: space-evenly; } }
+    @media screen and (max-width: 500px) {
+      .main .achivments {
+        padding: 0.5em 0 0.5em 25vw;
+        height: auto;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-flow: column nowrap;
+                flex-flow: column nowrap;
+        -webkit-box-pack: start;
+            -ms-flex-pack: start;
+                justify-content: flex-start;
+        -webkit-box-align: stretch;
+            -ms-flex-align: stretch;
+                align-items: stretch; } }
   .main .approach .h1-approach {
     padding: 0.05em 2.5em; }
   .main .approach .approach__grid {
