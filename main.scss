@@ -463,14 +463,23 @@
 
         h1{
             @extend %h1-option;
-            margin: 1em 10% 1.3em 10%;
+            margin: 1em 10vw 1.3em 10vw;
+
+            @media screen and (max-width:768px) and (min-width:500px){
+                font-size: 40px;
+                margin: 1em 0 1.3em 5vw;
+            }
+            @media screen and (max-width:500px){
+                font-size: 10vw;
+                margin: 1em 0 1.3em 5vw;
+            }
         }
         .main__technologies--grid{
-            height: 50em;
-            margin: 0 10% 5em 10%;
+            height: auto;
+            margin: 0 10vw 5vh 10vw;
             display: grid;
-            grid-template-columns: repeat(auto-fill, 30%);
-            grid-gap: 0 2.1em;
+            grid-template-columns: repeat(auto-fill, 33%);
+            grid-gap: 2em 0;
             justify-items: stretch;;
             align-items: stretch;
 
@@ -480,8 +489,38 @@
                     @extend %h2-option;
                     border-bottom: $mcolor solid;
                     border-width: thick;
-                    
+
+                    @media screen and (max-width:768px) and (min-width:500px){
+                        font-size: 3.5vw;
+                    }
+                    @media screen and (max-width:500px){
+                        font-size: 22px;
+                    }
                 }
+                p{
+                    padding: 0 4em 0 0;
+
+                    @media screen and (max-width:768px) and (min-width:500px){
+                        font-size: 16px;
+                    }
+                    @media screen and (max-width:500px){
+                        font-size: 13px;
+                    }
+                }
+            }
+
+            @media screen and (max-width:980px) and (min-width:768px){
+                grid-template-columns: repeat(auto-fill, 50%);
+                margin: 0 100vw 0 8vw;
+            }
+            @media screen and (max-width:768px) and (min-width:500px){
+                grid-template-columns: repeat(auto-fill, 50%);
+                margin: 0 25vw 0 5vw;
+    
+            }
+            @media screen and (max-width:500px){
+                grid-template-columns: repeat(auto-fill, 100%);
+                margin: 0 100vw 0 5vw;
             }
         }
     }
