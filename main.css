@@ -362,7 +362,7 @@
     height: auto;
     width: 100vw;
     margin: 1em 0;
-    padding: 2em 0;
+    padding: 2vw 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -376,17 +376,36 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center; }
+    @media screen and (max-width: 768px) and (min-width: 500px) {
+      .main .idea h1 {
+        font-size: 54px; } }
+    @media screen and (max-width: 500px) {
+      .main .idea h1 {
+        font-size: 44px; } }
     .main .idea p {
       font-size: 24px;
       font-weight: 400;
       padding: 0 10em 1em 10em;
       text-align: center; }
+      @media screen and (max-width: 980px) and (min-width: 768px) {
+        .main .idea p {
+          font-size: 22px;
+          padding: 0 10vw 5vh 10vw; } }
+      @media screen and (max-width: 768px) and (min-width: 500px) {
+        .main .idea p {
+          font-size: 20px;
+          padding: 0 10vw 5vh 10vw; } }
+      @media screen and (max-width: 500px) {
+        .main .idea p {
+          font-size: 18px;
+          padding: 0 10vw 5vh 10vw; } }
     .main .idea .main__idea--button {
       background-color: #e74c7a;
       color: white;
       text-decoration: none;
-      width: 25em;
-      height: 4.5em;
+      width: 50vw;
+      max-width: 25em;
+      height: 7vh;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -408,17 +427,20 @@
       background-color: #e74c7a;
       opacity: .77; }
     .main .idea .main__idea--button:active {
-      -webkit-transform: translate(1px, 5px);
-              transform: translate(1px, 5px); }
+      -webkit-transform: translate(0, 2px);
+              transform: translate(0, 2px); }
+    .main .idea .main__idea--button:focus {
+      outline: none;
+      opacity: .65; }
     @media screen and (max-width: 980px) and (min-width: 768px) {
       .main .idea {
-        padding: 1vh 90vw 1vh 10vw; } }
+        padding: 1vh 90vw 1vh 0; } }
     @media screen and (max-width: 768px) and (min-width: 500px) {
       .main .idea {
-        padding: 1vh 10vw 1vh 10vw; } }
+        padding: 1vh 15vw 1vh 0; } }
     @media screen and (max-width: 500px) {
       .main .idea {
-        padding: 1vh 10vw 1vh 10vw; } }
+        padding: 1vh 10vw 1vh 0; } }
   .main .technologies h1 {
     margin: 1em 10% 1.3em 10%; }
   .main .technologies .main__technologies--grid {

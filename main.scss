@@ -381,7 +381,7 @@
         height: auto;
         width: 100vw;
         margin: 1em 0;
-        padding: 2em 0;
+        padding: 2vw 0;
         display: flex;
         flex-flow: column nowrap;
         justify-content: center;
@@ -389,19 +389,41 @@
 
         h1{
             @extend %h1-option;
+
+            @media screen and (max-width:768px) and (min-width:500px){
+                font-size: 54px;
+            }
+            @media screen and (max-width:500px){
+                font-size: 44px;
+            }
         }
         p{
             font-size: 24px;
             font-weight: 400;
             padding: 0 10em 1em 10em;
             text-align: center;
+
+            
+            @media screen and (max-width:980px) and (min-width:768px){
+                font-size: 22px;
+                padding: 0 10vw 5vh 10vw;
+            }
+            @media screen and (max-width:768px) and (min-width:500px){
+                font-size: 20px;
+                padding: 0 10vw 5vh 10vw;
+            }
+            @media screen and (max-width:500px){
+                font-size: 18px;
+                padding: 0 10vw 5vh 10vw;
+            }
         }
         .main__idea--button{
             background-color: $mcolor;
             color: white;
             text-decoration: none;
-            width: 25em;
-            height: 4.5em;
+            width: 50vw;
+            max-width: 25em;
+            height: 7vh;
             display: flex;
             flex-flow: row nowrap;
             justify-content: center;
@@ -418,18 +440,22 @@
             opacity: .77;
         }
         .main__idea--button:active{
-            transform: translate(1px, 5px);
+            transform: translate(0, 2px);
         }   
+        .main__idea--button:focus{
+            outline: none;
+            opacity: .65;
+        }
 
         @media screen and (max-width:980px) and (min-width:768px){
-            padding: 1vh 90vw 1vh 10vw;
+            padding: 1vh 90vw 1vh 0;
         }
         @media screen and (max-width:768px) and (min-width:500px){
-            padding: 1vh 10vw 1vh 10vw;
-            
+            padding: 1vh 15vw 1vh 0;
+
         }
         @media screen and (max-width:500px){
-            padding: 1vh 10vw 1vh 10vw;
+            padding: 1vh 10vw 1vh 0;
         }
     }
 
