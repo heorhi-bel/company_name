@@ -1,10 +1,12 @@
 @import "_mixin.scss";
 
+
 .body{
     font-family: 'Raleway', sans-serif;
     font-size: 16px;
     font-weight: 300;
-    width: 100%;
+    width: 100vw;
+    
 }
 
 .header{
@@ -141,7 +143,7 @@
     }
 }
 .main{
-    display: inline-block;
+    display: block;
     font-family: 'Raleway', sans-serif;
     background-color: white;
     height: auto;
@@ -176,7 +178,8 @@
         }
 
         @media screen and (max-width:980px) and (min-width:768px){
-            padding: 10vh 110vw 10vh 10vw;
+            padding: 2vh 10vw 2vh 15vw;
+            width: 60vw;
             font-size: 19px;
             height: auto;
         }
@@ -184,7 +187,7 @@
             padding: 5% 3% 8% 10%;
             width: 70vw;
             font-size: 16px;
-            height: 1fr;
+            height: auto;
         }
         @media screen and (max-width:500px){
             margin: 1em 0;
@@ -198,6 +201,7 @@
     .achivments{
         background-color: $back-color;
         color: white;
+        width: 100vw;
         height: 18em;
         display: flex;
         flex-flow: row wrap;
@@ -240,7 +244,7 @@
             
         }
         @media screen and (max-width:980px) and (min-width:768px){
-            padding: 0 110vw 0 5vw;
+            width: 98vw;
         }
 
         @media screen and (max-width:768px) and (min-width:500px){
@@ -250,11 +254,12 @@
             
         }
         @media screen and (max-width:500px){
-            padding: 0.5em 110vw 0.5em 25vw;
+            padding: 0.5em 5vw 0.5em 25vw;
             height: auto;
+            width: 50vw;
             display: flex;
             flex-flow: column nowrap;
-            justify-content: flex-start;
+            justify-content: flex-end;
             align-items: stretch;
         }
     }
@@ -317,7 +322,7 @@
             }
 
             @media screen and (max-width:980px) and (min-width:768px){
-                margin: 0 110vw 0 10vw;
+                margin: 0 10vw 0 10vw;
                 
             }
             @media screen and (max-width:768px){
@@ -450,7 +455,8 @@
         }
 
         @media screen and (max-width:980px) and (min-width:768px){
-            padding: 1vh 90vw 1vh 0;
+            padding: 1vh 0vw 1vh 0;
+            
         }
         @media screen and (max-width:768px) and (min-width:500px){
             padding: 1vh 15vw 1vh 0;
@@ -513,7 +519,7 @@
 
             @media screen and (max-width:980px) and (min-width:768px){
                 grid-template-columns: repeat(auto-fill, 50%);
-                margin: 0 100vw 0 8vw;
+                margin: 0 5vw 0 8vw;
             }
             @media screen and (max-width:768px) and (min-width:500px){
                 grid-template-columns: repeat(auto-fill, 50%);

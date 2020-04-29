@@ -10,7 +10,7 @@
   font-family: 'Raleway', sans-serif;
   font-size: 16px;
   font-weight: 300;
-  width: 100%; }
+  width: 100vw; }
 
 .header {
   display: -webkit-box;
@@ -150,7 +150,7 @@
         font-size: 12px; } }
 
 .main {
-  display: inline-block;
+  display: block;
   font-family: 'Raleway', sans-serif;
   background-color: white;
   height: auto; }
@@ -190,7 +190,8 @@
           font-size: 26px; } }
     @media screen and (max-width: 980px) and (min-width: 768px) {
       .main .main__doing {
-        padding: 10vh 110vw 10vh 10vw;
+        padding: 2vh 10vw 2vh 15vw;
+        width: 60vw;
         font-size: 19px;
         height: auto; } }
     @media screen and (max-width: 768px) and (min-width: 500px) {
@@ -198,7 +199,7 @@
         padding: 5% 3% 8% 10%;
         width: 70vw;
         font-size: 16px;
-        height: 1fr; } }
+        height: auto; } }
     @media screen and (max-width: 500px) {
       .main .main__doing {
         margin: 1em 0;
@@ -209,6 +210,7 @@
   .main .achivments {
     background-color: rgba(57, 78, 110, 0.87);
     color: white;
+    width: 100vw;
     height: 18em;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -255,7 +257,7 @@
           height: 3em; } }
     @media screen and (max-width: 980px) and (min-width: 768px) {
       .main .achivments {
-        padding: 0 110vw 0 5vw; } }
+        width: 98vw; } }
     @media screen and (max-width: 768px) and (min-width: 500px) {
       .main .achivments {
         padding: 0 5vw 0 10vw;
@@ -265,8 +267,9 @@
                 justify-content: space-evenly; } }
     @media screen and (max-width: 500px) {
       .main .achivments {
-        padding: 0.5em 110vw 0.5em 25vw;
+        padding: 0.5em 5vw 0.5em 25vw;
         height: auto;
+        width: 50vw;
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -274,9 +277,9 @@
         -webkit-box-direction: normal;
             -ms-flex-flow: column nowrap;
                 flex-flow: column nowrap;
-        -webkit-box-pack: start;
-            -ms-flex-pack: start;
-                justify-content: flex-start;
+        -webkit-box-pack: end;
+            -ms-flex-pack: end;
+                justify-content: flex-end;
         -webkit-box-align: stretch;
             -ms-flex-align: stretch;
                 align-items: stretch; } }
@@ -326,7 +329,7 @@
           font-size: 12px; } }
     @media screen and (max-width: 980px) and (min-width: 768px) {
       .main .approach .approach__grid {
-        margin: 0 110vw 0 10vw; } }
+        margin: 0 10vw 0 10vw; } }
     @media screen and (max-width: 768px) {
       .main .approach .approach__grid {
         margin: 0 5vw 0 8vw;
@@ -436,7 +439,7 @@
       opacity: .65; }
     @media screen and (max-width: 980px) and (min-width: 768px) {
       .main .idea {
-        padding: 1vh 90vw 1vh 0; } }
+        padding: 1vh 0vw 1vh 0; } }
     @media screen and (max-width: 768px) and (min-width: 500px) {
       .main .idea {
         padding: 1vh 15vw 1vh 0; } }
@@ -483,7 +486,7 @@
     @media screen and (max-width: 980px) and (min-width: 768px) {
       .main .technologies .main__technologies--grid {
         grid-template-columns: repeat(auto-fill, 50%);
-        margin: 0 100vw 0 8vw; } }
+        margin: 0 5vw 0 8vw; } }
     @media screen and (max-width: 768px) and (min-width: 500px) {
       .main .technologies .main__technologies--grid {
         grid-template-columns: repeat(auto-fill, 50%);
