@@ -260,7 +260,8 @@
         width: 98vw; } }
     @media screen and (max-width: 768px) and (min-width: 500px) {
       .main .achivments {
-        padding: 0 5vw 0 10vw;
+        padding-left: 10vw;
+        width: 88vw;
         height: auto;
         -webkit-box-pack: space-evenly;
             -ms-flex-pack: space-evenly;
@@ -442,7 +443,7 @@
         padding: 1vh 0vw 1vh 0; } }
     @media screen and (max-width: 768px) and (min-width: 500px) {
       .main .idea {
-        padding: 1vh 15vw 1vh 0; } }
+        padding: 1vh 0vw 1vh 0; } }
     @media screen and (max-width: 500px) {
       .main .idea {
         padding: 1vh 10vw 1vh 0; } }
