@@ -1,4 +1,5 @@
 @import "_mixin.scss";
+@import "_photos.scss";
 
 
 .body{
@@ -255,13 +256,11 @@
             
         }
         @media screen and (max-width:500px){
-            margin: 0;
-            padding: 0;
             height: auto;
-            width: 100vw;
+            width: 97vw;
             display: flex;
             flex-flow: column nowrap;
-            justify-content: center;
+            justify-content: flex-end;
             align-items: center;
         }
     }
@@ -465,7 +464,7 @@
 
         }
         @media screen and (max-width:500px){
-            width: 100vw;
+            padding: 1vh 0vw 1vh 0;
         }
     }
 
@@ -531,7 +530,7 @@
             }
             @media screen and (max-width:500px){
                 grid-template-columns: repeat(auto-fill, 100%);
-                margin: 0 5vw 0 5vw;
+                margin: 0 10vw 0 5vw;
             }
         }
     }
@@ -566,12 +565,7 @@
 
             
             .main__photos__container{
-                width: 20vw;
-                height: 28vw; 
-                overflow: hidden;
-                position: relative;
-                cursor: pointer;
-                
+                @include pack-for-container(url(/images/photos\ 1\ 300x400.png));
                 border-radius: 1px;
                 
                 @media screen and (max-width:768px) and (min-width:500px){
@@ -582,42 +576,46 @@
                     width: 70vw;
                     height: 80vw;
                 }
+                h2{
+                    @include pack-for-h2();
+                }
+                h2::after{
+                    @include pack-for-h2-after('Project 1');
+                }
+                h2:hover::after{
+                    @include pack-for-h2-hover-after();
+                }
+                
+                p{
+                    @include pack-for-p();
+                }
+                p::after{
+                    @include pack-for-p-after('Physical expirments of modern time. We do especial boxes for unspecial people');
+                }
+                p:hover::after{
+                    @include pack-for-p-hover-after();
+                }
             }
             .main__photos__container::after{
-                content: '';
-                width: 100%;
-                height: 4px;
-                display: block;
-                position: absolute;
-                top: 28vw;
-                left: 0;
-                
-
-                background-color: rgba($color: $mcolor, $alpha: .87);
-                transition: all .8s ease-out;
-
-                @media screen and (max-width:768px) and (min-width:500px){
-                    top: 48vw;
-                }
-                @media screen and (max-width:500px){
-                    top: 80vw;
-                }   
+                @include pack-for-container-after();                
             }
 
             .main__photos__container:hover::after{
-                width: 100%;
-                height: 28vw;
-                top: 0;
-                left: 0;
-                transition: .5s ease-out;
-                
-                @media screen and (max-width:768px) and (min-width:500px){
-                    height: 48vw;
-                }  
-                @media screen and (max-width:500px){
-                    height: 80vw;
-                }  
+                @include pack-for-container-hover-after();                
             }
+
+            @include main__photos__container-one(url(/images/photos\ office-300x400.jpg), 'Project 2', 
+                'Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Nullam et est ipsum. Duis congue dapibus elementum. ');
+            @include main__photos__container-two(url(/images/photos\ office\ 2\ 300x400.jpg), 'Project 3', 
+                'Nullam et est ipsum. Duis congue dapibus elementum consectetur.');
+            @include main__photos__container-three(url(/images/photos\ office\ 3-300x400.jpg), 'Project 4', 
+                'Proin nec vulputate nibh, ut dictum metus. Mauris sed orci mattis, luctus velit in,
+                volutpat neque. Aenean lacus nibh, blandit sed ante.');
+            @include main__photos__container-four(url(/images/photos\ office\ 5\ 300x400.jpg), 'Project 5', 
+                'Fusce semper velit magna, sit amet aliquam leo tincidunt in. Curabitur condimentum imperdiet sem, vitae tincidunt nulla pretium eu.');
+            @include main__photos__container-five(url(/images/photos\ offiece\ 4-300x400.jpg), 'Project 6', 
+                'Vestibulum rutrum, velit at sodales lobortis, urna mauris sodales est, ac vestibulum tortor urna porttitor arcu.');
             
             @media screen and (max-width:980px) and (min-width:768px){
                 grid-template-columns: repeat(auto-fill, 26%);

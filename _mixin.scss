@@ -8,3 +8,201 @@ $back-color: rgba(57, 78, 110, 0.87);
     font-size: 30px;
     font-weight: 700;
 }
+
+
+@mixin pack-for-container($way){
+    width: 20vw;
+    height: 28vw;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+
+    background: $way;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+        @mixin pack-for-p(){
+            width: 20vw;
+            height: 28vw;
+            overflow: inherit;
+            position: relative;
+            margin: 0;
+
+            @media screen and (max-width: 768px) and (min-width: 500px){
+                width: 40vw;
+                height: 48vw;
+            }
+            @media screen and (max-width: 500px){
+                width: 70vw;
+                height: 80vw;
+            }
+        }
+        @mixin pack-for-p-after($paragraf_name){
+            content: $paragraf_name;
+            display: block;
+            width: 18vw;
+            height: 28vw;
+            padding-top: 29vw;
+            padding-left: 1.5vw;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 3;
+
+            font-family: 'Raleway', sans-serif;
+            font-size: 1vw;
+            color: black;
+            font-weight: 500;
+
+            transition: all .2s ease-out;
+
+            @media screen and (max-width: 768px) and (min-width: 500px){
+                width: 40vw;
+                height: 48vw;
+                padding-top: 49vw;
+
+                font-size: 2vw;
+            }
+            @media screen and (max-width: 500px){
+                width: 70vw;
+                height: 80vw;
+                padding-top: 81vw;
+
+                font-size: 4vw;
+            }
+        }
+
+        @mixin pack-for-p-hover-after(){
+            width: 18vw;
+            height: 28vw;
+            padding-top: 23vw;
+            position: absolute;
+            display: block;
+            top: 0;
+            left: 0;
+            z-index: 3;
+        
+            transition: all .9s ease-out 0.3s;
+
+            @media screen and (max-width: 768px) and (min-width: 500px){
+                width: 37vw;
+                height: 48vw;
+                padding-top: 38vw;
+            }
+            @media screen and (max-width: 500px){
+                width: 66vw;
+                height: 80vw;
+                padding-top: 55vw;
+            }
+        }
+
+@mixin pack-for-h2(){
+    width: 20vw;
+    height: 28vw;
+    overflow: inherit;
+    position: relative;
+    margin: 0;
+
+    @media screen and (max-width: 768px) and (min-width: 500px){
+        width: 40vw;
+        height: 48vw;
+    }
+    @media screen and (max-width: 500px){
+        width: 70vw;
+        height: 80vw;
+    }
+}
+
+@mixin pack-for-h2-after($project_name){
+        content: $project_name;
+        display: block;
+        width: 100%;
+        height: 100%;
+        padding-top: 29vw;
+        padding-left: 1.5vw;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 2;
+
+        font-family: 'Raleway', sans-serif;
+        font-size: 2.3vw;
+        color: black;
+        font-weight: 900;
+
+        transition: all .3s ease-out .15s;
+
+        @media screen and (max-width: 768px) and (min-width: 500px){
+            width: 38vw;
+            height: 48vw;
+            padding-top: 49vw;
+
+            font-size: 4.5vw;
+        }
+        @media screen and (max-width: 500px){
+            width: 77vw;
+            height: 80vw;
+            padding-top: 81vw;
+
+            font-size: 10vw;
+        }        
+}
+
+@mixin pack-for-h2-hover-after(){
+    width: 100%; //20vw 28vw
+    height: 100%;
+    padding-top: 20vw;
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    z-index: 2;
+
+    transition: all .7s ease-out;
+
+    @media screen and (max-width: 768px) and (min-width: 500px){
+        width: 40vw;
+        height: 48vw;
+        padding-top: 32vw;
+    }
+    @media screen and (max-width: 500px){
+        width: 70vw;
+        height: 81vw;
+        padding-top: 40vw;
+    }
+}
+
+        @mixin pack-for-container-after(){
+            content: '';
+            width: 20vw;
+            height: 8px;
+            display: block;
+            position: absolute;
+            top: 28vw;
+            left: 0;
+
+            background-color: rgba(231, 76, 122, 0.87);
+            transition: all 1s ease-out;
+
+            @media screen and (max-width: 768px) and (min-width: 500px){
+                width: 40vw;
+                height: 8px;
+                top: 48vw;
+            }
+            @media screen and (max-width: 500px){
+                width: 70vw;
+                height: 8px;
+                top: 80vw;
+            }
+        }
+
+        @mixin pack-for-container-hover-after(){
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+
+            transition: all 1s ease-out;
+        }
