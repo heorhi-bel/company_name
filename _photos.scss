@@ -1,0 +1,215 @@
+$mcolor: rgb(231, 76, 122);
+
+@mixin main__photos__container-one($way, $project_name, $paragraf_name) {
+    
+    .main__photos__container-one{
+        @include pack-for-container($way);
+        border-radius: 1px;
+        
+        @media screen and (max-width:768px) and (min-width:500px){
+            width: 40vw;
+            height: 48vw;
+        }   
+        @media screen and (max-width:500px){
+            width: 70vw;
+            height: 80vw;
+        }
+        h2{
+            @include pack-for-h2();
+        }
+        h2::after{
+            @include pack-for-h2-after($project_name);
+        }
+        h2:hover::after{
+            @include pack-for-h2-hover-after();
+        }
+        
+        p{
+            @include pack-for-p();
+        }
+        p::after{
+            @include pack-for-p-after($paragraf_name);
+        }
+        p:hover::after{
+            @include pack-for-p-hover-after();
+        }
+    }
+    .main__photos__container-one::after{
+        @include pack-for-container-after();                
+    }
+    .main__photos__container-one:hover::after{
+        @include pack-for-container-hover-after();                
+    }
+}
+
+
+@mixin main__photos__container-two($way, $project_name, $paragraf_name) {
+    
+    .main__photos__container-two{
+        @include pack-for-container($way);
+        border-radius: 1px;
+        
+        @media screen and (max-width:768px) and (min-width:500px){
+            width: 40vw;
+            height: 48vw;
+        }   
+        @media screen and (max-width:500px){
+            width: 70vw;
+            height: 80vw;
+        }
+        h2{
+            @include pack-for-h2();
+        }
+        h2::after{
+            @include pack-for-h2-after($project_name);
+        }
+        h2:hover::after{
+            @include pack-for-h2-hover-after();
+        }
+        
+        p{
+            @include pack-for-p();
+        }
+        p::after{
+            @include pack-for-p-after($paragraf_name);
+        }
+        p:hover::after{
+            @include pack-for-p-hover-after();
+        }
+    }
+    .main__photos__container-two::after{
+        @include pack-for-container-after();                
+    }
+    .main__photos__container-two:hover::after{
+        @include pack-for-container-hover-after();                
+    }
+}
+
+
+@mixin main__photos__container-three($way, $project_name, $paragraf_name) {
+    
+    .main__photos__container-three{
+        @include pack-for-container($way);
+        border-radius: 1px;
+        
+        @media screen and (max-width:768px) and (min-width:500px){
+            width: 40vw;
+            height: 48vw;
+        }   
+        @media screen and (max-width:500px){
+            width: 70vw;
+            height: 80vw;
+        }
+        h2{
+            @include pack-for-h2();
+        }
+        h2::after{
+            @include pack-for-h2-after($project_name);
+        }
+        h2:hover::after{
+            @include pack-for-h2-hover-after();
+        }
+        
+        p{
+            @include pack-for-p();
+        }
+        p::after{
+            @include pack-for-p-after($paragraf_name);
+        }
+        p:hover::after{
+            @include pack-for-p-hover-after();
+        }
+    }
+    .main__photos__container-three::after{
+        @include pack-for-container-after();                
+    }
+    .main__photos__container-three:hover::after{
+        @include pack-for-container-hover-after();                
+    }
+}
+
+
+@mixin main__photos__container-four($way, $project_name, $paragraf_name) {
+    
+    .main__photos__container-four{
+        @include pack-for-container($way);
+        border-radius: 1px;
+        
+        @media screen and (max-width:768px) and (min-width:500px){
+            width: 40vw;
+            height: 48vw;
+        }   
+        @media screen and (max-width:500px){
+            width: 70vw;
+            height: 80vw;
+        }
+        h2{
+            @include pack-for-h2();
+        }
+        h2::after{
+            @include pack-for-h2-after($project_name);
+        }
+        h2:hover::after{
+            @include pack-for-h2-hover-after();
+        }
+        
+        p{
+            @include pack-for-p();
+        }
+        p::after{
+            @include pack-for-p-after($paragraf_name);
+        }
+        p:hover::after{
+            @include pack-for-p-hover-after();
+        }
+    }
+    .main__photos__container-four::after{
+        @include pack-for-container-after();                
+    }
+    .main__photos__container-four:hover::after{
+        @include pack-for-container-hover-after();                
+    }
+}
+
+
+@mixin main__photos__container-five($way, $project_name, $paragraf_name) {
+    
+    .main__photos__container-five{
+        @include pack-for-container($way);
+        border-radius: 1px;
+        
+        @media screen and (max-width:768px) and (min-width:500px){
+            width: 40vw;
+            height: 48vw;
+        }   
+        @media screen and (max-width:500px){
+            width: 70vw;
+            height: 80vw;
+        }
+        h2{
+            @include pack-for-h2();
+        }
+        h2::after{
+            @include pack-for-h2-after($project_name);
+        }
+        h2:hover::after{
+            @include pack-for-h2-hover-after();
+        }
+        
+        p{
+            @include pack-for-p();
+        }
+        p::after{
+            @include pack-for-p-after($paragraf_name);
+        }
+        p:hover::after{
+            @include pack-for-p-hover-after();
+        }
+    }
+    .main__photos__container-five::after{
+        @include pack-for-container-after();                
+    }
+    .main__photos__container-five:hover::after{
+        @include pack-for-container-hover-after();                
+    }
+}
